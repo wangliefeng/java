@@ -2,12 +2,14 @@ package FirstGame;
 
 public class Main {
     public static void main(String[] args) {
+        //创建英雄和装备
+        Soldier s1 = new Soldier();
+        Master m2 = new Master();
+        Weapon w1 = new Weapon();
+        Weapon w2 = new Weapon();
+        //战斗开始
         System.out.println("Let's fight!");
-        Person h1 = new Person("战士",50,10,20);
-        Person h2 = new Person("法师",50,20,10);
-        Weapon w1 = new Weapon("钢铁铠甲",10,20);
-        Weapon w2 = new Weapon("意念头骷",20,10);
-
+        s1.attack();
 
     }
 }
