@@ -23,8 +23,26 @@ public class Hero {
         System.out.println(h.name+"受到的普通攻击伤害为："+number1);
         h.blood=h.blood-number1;
     }
-    public void take(Weapon w){
-        System.out.println("拾取装备"+w);
+    public void take(Hero h,Weapon w){
+        if(w.id==1){
+            Weapon w1 = new Weapon(1,"圣剑",30,10);
+            h.equipment= w1.name;
+            h.power=h.power+w1.addPower;
+            h.defense=h.defense+w1.addDefense;
+        }
+        if(w.id==2){
+            Weapon w2 = new Weapon(2,"权戒",20,20);
+            h.equipment=w2.name;
+            h.power=h.power+w2.addPower;
+            h.defense=h.defense+w2.addDefense;
+        }
+        if(w.id==3){
+            Weapon w3 = new Weapon(3,"魅惑之眼",30,30);
+            h.equipment=w3.name;
+            h.power=h.power+w3.addPower;
+            h.defense=h.defense+w3.addDefense;
+        }
+
     }
     public void UseSkill(){
         System.out.println("使用技能");

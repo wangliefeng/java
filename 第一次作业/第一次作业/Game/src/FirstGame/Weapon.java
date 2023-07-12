@@ -2,10 +2,10 @@ package FirstGame;
 
 public class Weapon {
     //属性
-    private int id;
-    private int addPower;
-    private int addDefense;
-    private String name;
+    public int id;
+    int addPower;
+    int addDefense;
+    public String name;
     //行为
     public Weapon(){
     }
